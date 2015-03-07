@@ -1,0 +1,24 @@
+<!--
+  ~ This is an example for accessing the Twitter Stream API.
+  ~ You will need keys and tokens from Twitter to make it work.
+  ~ Configure the track parameter to match the keywords and phrases you want to track.
+  ~ The example here tracks retweets as well as obscure retweet alternatives.
+  -->
+
+<crawler>
+  <apiKey>consumer-key-here</apiKey>
+  <apiSecret>consumer-secret-token-here</apiSecret>
+
+  <connection connect="5000" read="900000">
+    <auth>
+      <token>access-token-here</token>
+      <secret>access-token-secret-here</secret>
+    </auth>
+    <url>https://stream.twitter.com/1.1/statuses/filter.json</url>
+    <query>
+      <param key="track">rt,qt,via,♻,♲</param>
+    </query>
+  </connection>
+  <remote port="4455" user="admin" password="your-admin-password-here"/>
+  <target dir="tweets"/>
+</crawler>

@@ -1,0 +1,21 @@
+<!--
+  ~ This is a generic example for GNIP.
+  ~ You will need an account and access to the data stream.
+  ~ Configure your user and password as well as the correct URL
+  -->
+<crawler>
+  <apiKey/>
+  <apiSecret/>
+
+  <connection connect="5000" read="90000" gnip="true">
+    <auth>
+      <token>email-address-here</token>
+      <secret>gnip-password-here</secret>
+    </auth>
+    <url>https://stream.gnip.com:443/accounts/YourApp/publishers/twitter/streams/track/prod.json</url>
+    <query/>
+  </connection>
+
+  <remote port="12345" user="admin" password="your-admin-password-here"/>
+  <target dir="tweets"/>
+</crawler>
