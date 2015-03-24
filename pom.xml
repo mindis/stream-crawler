@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright (c) 2014 streamdrill UG (haftungsbeschraenkt). All rights reserved.
+  ~ Copyright (c) 2015 streamdrill UG (haftungsbeschraenkt). All rights reserved.
   -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -9,7 +9,7 @@
   <groupId>streamdrill</groupId>
   <artifactId>stream-crawler</artifactId>
   <version>1.2</version>
-  <name>Twitter Stream API Connector [${project.version}]</name>
+  <name>streamdrill-crawler [${project.version}]</name>
   <description>
     Connect to a streaming source and write dumps in daywise logs to the hard disk.
   </description>
